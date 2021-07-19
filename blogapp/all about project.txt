@@ -1,0 +1,22 @@
+PROJECT EXPLANATION:
+
+        1)In this project i mainly perform two main things:
+                *)Contact details which is directly save in database,so we can access admin and saw it,
+                  
+                  admin:
+                       username: jose
+                       password: jose
+
+                *) We can wrote any blog content in admistrator page that is posted in blogpage.
+
+        2)i was tried many times to connect Comment section and post the images,but some logical problems 
+          are happen in html page,i didn't know to wrote code in html for comment and post the images.
+
+        
+        3)but for comment section i wrote logic in views.py and wrote code in model.py,admin.py....but due to 
+          that above issue i delete that code.
+
+        4)In this project you can see little devoloped wep page.
+
+
+    

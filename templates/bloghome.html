@@ -1,0 +1,34 @@
+<!-- this html code in mainly for bloghome page -->
+
+{% extends 'base.html' %}
+{% block blogactive %}active{% endblock blogactive %}
+
+ {% block body %}
+<div class="container">
+    <div>
+    <h1>Welcome to JOSEblog</h1>
+    </div>
+{% for blog in blogs %}
+  
+<div class='my-4'>
+    
+    <div class="media-body">
+      <h3 class= text-dark><a href="/blogpost/{{blog.slug}}" class="text-dark">{{blog.title}}</a></h3>
+      
+      <div class="my-2">
+      {{blog.content|slice:245}}...
+      </div>
+      <div class="my-2">
+       {{ blog.cover}}
+      </div>
+    </div>
+    <a href="/blogpost/{{blog.slug}}" class="text-dark"><button type="button" class="btn btn-success" >Read More...</button>
+</div>
+{% endfor %}
+
+<div class="my-3">
+<button class="btn btn-primary">&laquo;Previous</button>
+<button  class="btn btn-primary float-right">Next&raquo;</button>
+</div>
+</div>
+ {% endblock body %}
